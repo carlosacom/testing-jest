@@ -12,8 +12,7 @@
   },
   "scripts": {
     "start": "npx ts-node src/index",
-    "test": "npx jest",
-    "prepare": "husky install"
+    "test": "npx jest"
   },
   "husky": {
     "hooks": {
