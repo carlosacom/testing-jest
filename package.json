@@ -15,6 +15,12 @@
     "test": "npx jest",
     "prepare": "husky install"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test && lint-staged",
+      "pre-push": "npm run test"
+    }
+  },
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
